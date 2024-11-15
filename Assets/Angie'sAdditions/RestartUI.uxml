@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="RestartBackground" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.49); width: 2797px; height: 769px; left: -153px;">
+        <ui:VisualElement name="RestartMessageBanner" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/StarterAsset/Art/SugarLand/UI/UIDialogueBox.png?fileID=21300000&amp;guid=cd17cea45c10d0943a1a8f2485b35902&amp;type=3#UIDialogueBox&apos;); -unity-background-scale-mode: scale-to-fit; width: 787px; left: 227px;">
+            <ui:Label tabindex="-1" text="Game Over!&#10;&#10;Press R to restart." display-tooltip-when-elided="true" name="PressRtext" enable-rich-text="true" style="-unity-font: url(&apos;project://database/Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf?fileID=12800000&amp;guid=74a5091d8707f334b9a5c31ef71a64ba&amp;type=3#PerfectDOSVGA437&apos;); top: 369px; font-size: 46px; -unity-text-align: upper-center; -unity-font-definition: initial;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
