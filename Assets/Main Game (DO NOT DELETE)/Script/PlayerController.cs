@@ -72,6 +72,10 @@ public class PlayerController : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
 
+//A.O. ADDED for game over.
+        gameOver = false;
+
+
     }
 
     void Update()
@@ -95,15 +99,32 @@ public class PlayerController : MonoBehaviour
             if (damageCooldown < 0)
                 isInvincible = false;
         }
-    //A.O. ADDED for activating game over 
+    //A.O. ADDED for game over 
         if (currentHealth == 0)
         {
             gameOverText.SetActive(true);
+            speed = 0;
+            gameOver = true;
         }
 
         if (score == 3)
         {
             gameOverText.SetActive(true);
+            gameOver = true;
+        }
+
+          if (Input.GetKey(KeyCode.R)) // check to see if the player is pressing R
+
+        {
+
+            if (gameOver == true) // check to see if the game over boolean has been set to true
+
+            {
+
+              SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // this loads the currently active scene, which results in a restart of whatever scene the player is currently in
+
+            }
+
         }
     }
 
